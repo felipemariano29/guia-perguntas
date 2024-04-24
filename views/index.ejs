@@ -1,12 +1,12 @@
 <%- include ("partials/header.ejs") %>
 <body>
-  <%- include ("partials/navbar.ejs") %> <% if (perguntas.length > 0) { %>
+  <%- include ("partials/navbar.ejs") %>
   <div class="container">
     <h1 class="mt-4">Perguntas</h1>
 
     <a href="/perguntar" class="btn btn-primary mb-4">Perguntar</a>
 
-    <% perguntas.forEach((pergunta) => { %>
+    <% if (perguntas.length > 0) { %> <% perguntas.forEach((pergunta) => { %>
     <div class="card mt-3">
       <div class="card-body">
         <h3>

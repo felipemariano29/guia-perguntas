@@ -108,4 +108,6 @@ app.post("/responder", (req, res) => {
     });
 });
 
-app.listen(port, () => console.log(`Servidor iniciado na porta ${port}`));
+app.listen(port, () => {
+  console.log(`Servidor iniciado na porta ${port}`);
+});
